@@ -1,6 +1,26 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/branding": "pages/branding.js",
+  "/api": "pages/api.js",
+  "/civicpass": "pages/civicpass.js",
+  "/config": "pages/config.js",
+  "/contribute": "pages/contribute.js",
+  "/council": "pages/council.js",
+  "/createplugin": "pages/createplugin.js",
+  "/glossary": "pages/glossary.js",
+  "/delegation": "pages/delegation.js",
+  "/": "pages/index.js",
+  "/interface": "pages/interface.js",
+  "/nftplugin": "pages/nftplugin.js",
+  "/notifications": "pages/notifications.js",
+  "/quadratic": "pages/quadratic.js",
+  "/setup/daomultisig": "pages/setup/daomultisig.js",
+  "/setup/daonft": "pages/setup/daonft.js",
+  "/setup/daotoken": "pages/setup/daotoken.js",
+  "/spl-governance": "pages/spl-governance.js",
+  "/treasury": "pages/treasury.js",
+  "/vsr": "pages/vsr.js",
+  "/whatisdao": "pages/whatisdao.js",
+  "/_document": "pages/_document.js"
 }
