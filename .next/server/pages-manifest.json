@@ -1,1 +1,6 @@
-{"/_app":"pages/_app.js","/_error":"pages/_error.js","/branding":"pages/branding.html","/api":"pages/api.js","/civicpass":"pages/civicpass.html","/config":"pages/config.html","/contribute":"pages/contribute.html","/council":"pages/council.html","/createplugin":"pages/createplugin.html","/glossary":"pages/glossary.html","/delegation":"pages/delegation.html","/":"pages/index.html","/interface":"pages/interface.html","/nftplugin":"pages/nftplugin.html","/notifications":"pages/notifications.html","/quadratic":"pages/quadratic.html","/setup/daomultisig":"pages/setup/daomultisig.html","/setup/daonft":"pages/setup/daonft.html","/setup/daotoken":"pages/setup/daotoken.html","/spl-governance":"pages/spl-governance.html","/treasury":"pages/treasury.html","/vsr":"pages/vsr.html","/whatisdao":"pages/whatisdao.html","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
+}

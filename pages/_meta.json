@@ -41,7 +41,7 @@
       "title": "Resources"
     },
     "api": {
-      "title": "API ↗",
+      "title": "SDK ↗",
       "href": "https://www.npmjs.com/package/@solana/spl-governance",
       "newWindow": true
     },
