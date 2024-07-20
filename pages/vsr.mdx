@@ -34,7 +34,7 @@ Create a Registrar by passing in the governance program ID, and the community to
 Using the SPL Governance UI today will default to the community owned VSR instance.
 </Callout>
 
-![](../source/vsr\vsrsetup1.png)
+![](../source/vsr/vsrsetup1.png)
 
 Use **`ConfigureVotingMint`** to add a token to the Registrar and set it’s vote weight. This instruction is where a lot of magic happens and _**needs to be carefully paid attention to!**_
 
@@ -59,7 +59,7 @@ Remaining accounts must be all the token mints that have registered as voting mi
 **voting\_power** = baseline\_vote\_weight + min(lockup\_time\_remaining / lockup\_saturation\_secs, 1) \* max\_extra\_lockup\_vote\_weight
 </Callout>
 
-![](../source/vsr\vsrsetup2.png)
+![](../source/vsr/vsrsetup2.png)
 
 ### Step 3 -  Realm Config
 
@@ -88,7 +88,7 @@ Brief guide onto how to lock your tokens after **VSR** is enable for the **DAO**
 
 Go to view your account on [**Realms**](https://realms.today/).
 
-![](../source/vsr\vsrlock1.png)
+![](../source/vsr/vsrlock1.png)
 
 Deposit your tokens.
 
@@ -96,7 +96,7 @@ Click "**View**" in the right hand corner of the "**Your Account**" section of t
 
 To lock your tokens, click "**Lock Tokens**".
 
-![](../source/vsr\vsrlock2.png)
+![](../source/vsr/vsrlock2.png)
 
 ### Step 2 - Lockup Type Selection
 
@@ -111,13 +111,13 @@ There are three lockup types: "**Cliff**", "**Constant**" and "**Vested**".
 You may have heard the term "**Cliff**" before when discussing investor, or team token lockup schedules.
 </Callout>
 
-![](../source/vsr\vsrlock3.png)
+![](../source/vsr/vsrlock3.png)
 
 ### Step 3 - Lock
 
 After setting your lockup schedule, and clicking "**Lock Tokens**" you will now be able to see information regarding your lockups from the Account page.
 
-![](../source/vsr\vsrlock4.png)
+![](../source/vsr/vsrlock4.png)
 </Steps>
 
 ## How to Propose Issuing Locked Tokens
@@ -131,7 +131,7 @@ Head to your **DAO** page on [**Realms**](https://realms.today/).
 
 Select "**New Proposal**".
 
-![](../source/vsr\vsrgrant1.png)
+![](../source/vsr/vsrgrant1.png)
 
 Input a Title and Description for your proposal.
 
@@ -143,7 +143,7 @@ Select the "**Lock up kind**".
 
 Fill out the rest of the relevant information such as the **start date**, **end date**, **wallet address** and the **amount**.
 
-![](../source/vsr\vsrgrant2.png)
+![](../source/vsr/vsrgrant2.png)
 
 ### Step 3 - Create the Proposal
 
@@ -162,7 +162,7 @@ Head to your **DAO** page on [**Realms**](https://realms.today/).
 
 Select "**New Proposal**".
 
-![](../source/vsr\vsrgrant1.png)
+![](../source/vsr/vsrgrant1.png)
 
 Input a Title and Description for your proposal.
 
@@ -175,7 +175,7 @@ Select the Transaction type. In this case, you will select **Clawback.**
     - **Deposit:** A single voter could receive multiple Grants. Selecting this determines which Grant the proposal would clawback.
     - **Clawback Destination:** The Treasury Account the clawed back tokens should go into.
 
-![](../source/vsr\vsrclaw1.png)
+![](../source/vsr/vsrclaw1.png)
 
 ### Step 3 - Create the Proposal
 
