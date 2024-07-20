@@ -2,7 +2,12 @@ import { useRouter } from 'next/router';
 import { useConfig } from 'nextra-theme-docs';
 
 export default {
-  logo: <b>Realms</b>,
+  logo: 
+      <div 
+        style={{display: 'flex', gap: '4px', alignItems: 'center'}}>
+      <img src="./realms-logo.png" width={30} height={30}/>
+      <b>Realms</b>
+    </div>,
   docsRepositoryBase: 'https://github.com/solana-labs/governance-docs/tree/master',
   
   project: {
