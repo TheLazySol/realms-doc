@@ -19,6 +19,7 @@
     },
     "delegation": "Delegation",
     "treasury": "Treasury",
+    "proposal": "Proposals",
     "council": "Council Members",
     "civicpass": "Civic Pass",
     "notifications": "Notifications",
@@ -43,6 +44,11 @@
     "api": {
       "title": "SDK ↗",
       "href": "https://www.npmjs.com/package/@solana/spl-governance",
+      "newWindow": true
+    },
+    "collab": {
+      "title": "Partner Form ↗",
+      "href": "https://tally.so/r/wvNgQ0",
       "newWindow": true
     },
     "-------": {
