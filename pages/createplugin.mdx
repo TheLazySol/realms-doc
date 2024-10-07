@@ -23,7 +23,7 @@ There are two parts to creating a voter weight plugin:
 1. The on-chain program
 2. The JS/TS client
 
-Plugins are stored in the [Goverance Program Library](https://github.com/solana-labs/governance-program-library), where you can see example plugins.
+Plugins are stored in the [Goverance Program Library](https://github.com/Mythic-Project/governance-program-library), where you can see example plugins.
 
 <Steps>
 ### Part 1 - The Plugin Program
@@ -78,7 +78,7 @@ pub struct Registrar {
 #### Voter Weight Record
 
 The structure of a Voter Weight record is fixed by the SPL-Governance program. 
-See [here](https://github.com/solana-labs/solana-program-library/blob/master/governance/addin-api/src/voter_weight.rs) for its structure.
+See [here](https://github.com/Mythic-Project/solana-program-library/blob/master/governance/addin-api/src/voter_weight.rs) for its structure.
 
 #### Instructions
 
@@ -91,7 +91,7 @@ These will be called by your JS/TS client.
 The JS/TS client is a JS plugin for the Realms UI, allowing the UI to interact with your plugin program
 at voting time, and when a user joins a DAO.
 
-The client must implement the [Client interface](https://github.com/solana-labs/governance-program-library/blob/master/src/common/Client.ts) in governance-program-library.
+The client must implement the [Client interface](https://github.com/Mythic-Project/governance-program-library/blob/master/src/common/Client.ts) in governance-program-library.
 
 The client provides implementations for
 - creating and updating voter weights and max voter weights,
@@ -103,9 +103,9 @@ The client provides implementations for
 
 Once you have a program and client, you can integrate your plugin with Realms as follows:
 
-1. Import it into [Governance UI](https://github.com/solana-labs/governance-ui)
-2. Register it in [VoterWeightPlugins/clients/index.ts](https://github.com/solana-labs/governance-ui/blob/master/VoterWeightPlugins/clients/index.ts)
-3. List it in [VotingStructureSelector/index.tsx](https://github.com/solana-labs/governance-ui/blob/master/hub/components/EditRealmConfig/VotingStructureSelector/index.tsx) and [constants/plugins.ts](https://github.com/solana-labs/governance-ui/blob/master/constants/plugins.ts) to ensure it appears in the list of plugins when editing a DAO.
+1. Import it into [Governance UI](https://github.com/Mythic-Project/governance-ui)
+2. Register it in [VoterWeightPlugins/clients/index.ts](https://github.com/Mythic-Project/governance-ui/blob/master/VoterWeightPlugins/clients/index.ts)
+3. List it in [VotingStructureSelector/index.tsx](https://github.com/Mythic-Project/governance-ui/blob/master/hub/components/EditRealmConfig/VotingStructureSelector/index.tsx) and [constants/plugins.ts](https://github.com/Mythic-Project/governance-ui/blob/master/constants/plugins.ts) to ensure it appears in the list of plugins when editing a DAO.
 4. Define any optional UI components as needed.
 
 The typical place where you will need to add dedicated UI components for your plugin is the "Voter Weight card",
@@ -120,7 +120,7 @@ The vanilla voting power UI will:
 This is a reasonable placeholder for some plugins, but to make life easier for users, plugin developers may want to add their own.
 
 To add your own:
-- add your plugin name to `pluginsWithDedicatedVotingPowerUI` in [VotingPowerCards.tsx](https://github.com/solana-labs/governance-ui/blob/master/components/GovernancePower/Power/VotingPowerCards.tsx)
+- add your plugin name to `pluginsWithDedicatedVotingPowerUI` in [VotingPowerCards.tsx](https://github.com/Mythic-Project/governance-ui/blob/master/components/GovernancePower/Power/VotingPowerCards.tsx)
 - register your UI component inside `CardForPlugin` in the same file
 
 ## Voter Weight Plugin Chaining
@@ -141,7 +141,7 @@ To support plugin chaining in your plugin:
 - Verify that the `input_voter_weight_record` account has the program ID that matches the `previous_voter_weight_plugin_program_id` field
 
 For examples of chainable plugins, see the Civic Pass and Quadratic plugins
-in the [Governance Program Library](https://github.com/solana-labs/governance-program-library).
+in the [Governance Program Library](https://github.com/Mythic-Project/governance-program-library).
 
 ### Supporting Chaining in the UI
 
