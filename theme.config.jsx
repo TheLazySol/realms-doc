@@ -8,10 +8,10 @@ export default {
       <img src="./realms-logo.png" width={30} height={30}/>
       <b>Realms</b>
     </div>,
-  docsRepositoryBase: 'https://github.com/solana-labs/governance-docs/tree/master',
+  docsRepositoryBase: 'https://github.com/Mythic-Project/realms-doc/tree/main',
   
   project: {
-    link: 'https://github.com/solana-labs/governance-docs/tree/master',
+    link: 'https://github.com/Mythic-Project/realms-doc/tree/main',
   },
   
   chat: {
@@ -44,7 +44,7 @@ export default {
       <span>
         MIT {new Date().getFullYear()} ©{' '}
         <a href="https://realms.today/" target="_blank">
-          Realms
+          Realms Today Ltd
         </a>
         .
       </span>
