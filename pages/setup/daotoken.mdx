@@ -43,9 +43,11 @@ Realms will provide a governance program ID by **default**, users can add their 
 
 If the your **DAO's** community have an existing token select "**Yes**" and provide the address of the community token you would like to use.&#x20;
 
-If the your **DAO's** community doesn't have an existing token select "**No**" and skip to step **3.1)**.
+If the your **DAO's** community doesn't have an existing token select "**No**" and skip to step **4**.
 
 <Callout type="info" emoji="ℹ️">
+Realms supports standart SPL token program and token extensions. (**SPL & Token22**)
+
 Realms will automatically say if the token address is **correct** or **not**.
 </Callout>
 
@@ -65,9 +67,12 @@ Regarding the minimum number of community tokens needed to manage the **DAO** it
 ![](../../source/createadao/createadao_step5.png)
 
 <Callout type="info" emoji="ℹ️">
-Realms will set the type of max voter weight to "**Supply Fraction**" and set the circulating supply factor by "**1**" by default, users can select which type of max voter weight they wanna use and also define the circulating supply factor under **`Advanced Options`** at this step in the Community Token **DAO** wizard.
+Realms will set the type of max voter weight to "**Supply Fraction**" and set the circulating supply factor by "**1**" by default for SPL tokens, users can select which type of max voter weight they wanna use and also define the circulating supply factor under **`Advanced Options`** at this step in the Community Token **DAO** wizard.
 </Callout>
 
+<Callout type="warning" emoji="⚠️">
+For token extensions (**Token22**), Realms will set the type of max voter weight to "**Absolute**" and set the circulating supply factor to the **number of tokens circulating** by default.
+</Callout>
 ### Step 4 - Community Token
 
 After selecting "**No**" you will be prompt to define the minimum number of community tokens needed to manage the DAO.
@@ -81,7 +86,7 @@ The optimal number of tokens and their distribution depend on the specific goals
 ![](../../source/createadao/createadao_step6.png)
 
 <Callout type="info" emoji="ℹ️">
-Realms will set the type of max voter weight to "**Supply Fraction**" and set the circulating supply factor by "**1**" by default, users can select which type of max voter weight they wanna use and also define the circulating supply factor under Advanced Options at this step in the Community Token **DAO** wizard.
+Realms will set the type of max voter weight to "**Supply Fraction**" and set the circulating supply factor by "**1**" by default, users can select which type of max voter weight they wanna use and also define the circulating supply factor under **`Advanced Options`** at this step in the Community Token **DAO** wizard.
 </Callout>
 
 ### Step 5 - Approval Treshold
