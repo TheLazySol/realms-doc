@@ -1,66 +1,52 @@
 import { Callout } from 'nextra/components'
 import { Steps } from 'nextra/components'
 
-## How To Change Your DAO Logo & Banner
-
-<Callout type="info" emoji="▶️">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t4nzLexzObE?si=eTUY5AtaZ9MzL0LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="allowFullScreen"></iframe>
-</Callout>
+## How To Change Your DAO Logo & Banner (On-chain Metadata)
 
 <Steps>
-### Step 1 - Fork the Repository
+### Step 1 - Visit the DAO page
 
-- Fork [**Mythic-Project/governance-ui**](https://github.com/Mythic-Project/governance-ui)**.**
+- Click the `Add Metadata` button. If you want to edit the existing metadata, click `Update Metadata`. 
+You will be redirected to the Mythic website.
 
 ![](../source/logo-banner/logo1.png)
 
-### Step 2 - Locate
+### Step 2 - Fill the metadata
 
-- Go to the **`public/ realms`** folder.
+- Connect your wallet on the Mythic website and click the `Create Metadata` button.
+- All fields are optional. Only fill-in the fields that you want to set.
+- You will need to enter the source link for the DAO and Banner Images. All formats and sizes are supported.
+If you don't have the link, follow the guide here to host your image online: [Image Upload Guide](#step-6---upload-image-guide-optional)
 
 ![](../source/logo-banner/logo2.png) 
+
+### Step 3 - Review the metadata
+
+- Once you have entered the desired fields, verify all the details on the Review page.
+- Make sure that the images are loading on this page, if not then the links are broken. Re-check the links 
+if that's the case.
+- Choose whether you want to create the `Community` or the `Council` proposal.
+
 ![](../source/logo-banner/logo3.png)
 
-### Step 3 - Add Files
+### Step 4 - Sign the Transactions
 
-- Add a your **DAO** logo in a folder/file in this directory
+- The wallet pop-up will ask you to sign 4-8 transactions depending upon the metadata configured.
+
+### Step 5 - Pass the proposal
+
+- Once the transactions are confirmed, you can visit the DAO and pass the metadata proposal.
+- After the proposal is executed, the metadata will reflect on Realms.
 
 ![](../source/logo-banner/logo4.png)
 
-### Step 4 - Change Parameters
+### Step 6 - Image Upload Guide (Optional)
 
-- Open **`mainnet-beta.json`**
-
-![](../source/logo-banner/logo5.png)
-
-- Include your **projects information** in the format below to the end:
-
-```
-{ "symbol": "SOLI",
-
-"displayName": "Solana Ecosystem Index",
-
-"programId": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
-
-"realmId": "J5ViB3N7S3YRnrMpy7iSy57yYQaviJJDmrfGVT51z44o",
-
-"ogImage": "/realms/SOLI/soli_logo.png",
-
-"website": "https://tokens.amun.com/token/SOLI",
-
-"twitter": "@Amun" },
-```
-
-### Step 5 - Submit Changes
-
-- Sign up for Vercel.com using your Github account info.
-- Create a pull request to commit your changes to Mythic-Project/Governance-ui
-- Make sure to check that your image works and is mapped to your DAO.
-- Click on preview and search for your DAO in the Realms browser to make sure it works
-
-![](../source/logo-banner/logo6.png)
+Under Construction
 </Steps>
+
 
 <Callout type="default" emoji="👉">
 In need of **help**? Hop on on [**Realms Discord**](https://discord.com/invite/VsPbrK2hJk) and ask away your questions!
 </Callout>
+
