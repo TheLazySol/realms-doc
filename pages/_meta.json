@@ -44,11 +44,7 @@
     "title": "Resources"
   },
   "sdk": "SDK",
-  "collab": {
-    "title": "Partner Form ↗",
-    "href": "https://tally.so/r/wvNgQ0",
-    "newWindow": true
-  },
+  "partner": "Partner Form",
   "-------": {
     "type": "separator",
     "title": "Deep Dive"
