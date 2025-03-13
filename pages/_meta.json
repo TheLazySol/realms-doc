@@ -44,7 +44,7 @@
     "title": "Resources"
   },
   "sdk": "SDK",
-  "partner": "Partner Form",
+  "customDao": "Custom DAO Form",
   "-------": {
     "type": "separator",
     "title": "Deep Dive"
