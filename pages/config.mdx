@@ -59,6 +59,112 @@ For every treasury created an authority is also given for each.
 
 ## Config Modification
 
+<Callout type="info" emoji="ℹ️">
+Only users with sufficient governance tokens can propose configuration changes to maintain DAO security.
+</Callout>
+
+### Prerequisites for Config Changes
+
+Before modifying DAO configuration, ensure you have:
+
+* Sufficient governance tokens to meet the minimum proposal threshold
+* Understanding of the proposed changes and their impact
+* Community consensus or discussion around the modification
+
+### Proposing Configuration Changes
+
+<Steps>
+### Step 1 - Access DAO Configuration
+
+Navigate to your DAO's **Params** section and review the current configuration settings.
+
+![](../source/createadao/config_modify_step1.png)
+
+### Step 2 - Create Configuration Proposal
+
+Click on **"Create Proposal"** to start proposing configuration changes.
+
+![](../source/createadao/config_modify_step2.png)
+
+### Step 3 - Select Configuration Type
+
+Choose the type of configuration you want to modify:
+
+* **Community Vote Threshold**: Minimum tokens required for governance participation
+* **Council Configuration**: Changes to council structure and requirements
+* **Voting Parameters**: Quorum requirements, voting periods, and approval thresholds
+* **Treasury Settings**: Treasury management and spending limits
+
+![](../source/createadao/config_modify_step3.png)
+
+### Step 4 - Configure New Parameters
+
+Enter the new configuration values carefully. Each parameter change requires:
+
+* **Current Value**: Display of existing configuration
+* **New Value**: Your proposed changes
+* **Justification**: Explanation for the modification
+
+![](../source/createadao/config_modify_step4.png)
+
+### Step 5 - Review and Submit
+
+Review your proposed changes thoroughly before submission. Include:
+
+* **Change Summary**: Brief description of modifications
+* **Impact Analysis**: How changes affect DAO operations
+* **Implementation Timeline**: When changes take effect
+
+![](../source/createadao/config_modify_step5.png)
+
+### Step 6 - Community Voting
+
+After submission, the proposal enters the voting phase where:
+
+* DAO members vote on the proposed changes
+* Voting period follows DAO governance rules
+* Proposal requires majority approval to pass
+
+![](../source/createadao/config_modify_step6.png)
+
+### Step 7 - Execute Configuration Changes
+
+Once approved, execute the configuration changes:
+
+* Click **"Execute"** in the proposal's instruction section
+* Configuration updates apply immediately
+* All DAO members are notified of the changes
+
+![](../source/createadao/config_modify_step7.png)
+</Steps>
+
+### Common Configuration Modifications
+
+#### Adjusting Vote Thresholds
+
+Modify the minimum number of governance tokens required for:
+* Creating proposals
+* Participating in votes
+* Reaching quorum for decisions
+
+#### Council Management
+
+Update council-related settings such as:
+* Maximum number of council members
+* Council voting weights
+* Council election processes
+
+#### Voting Parameters
+
+Configure voting mechanics including:
+* Voting duration periods
+* Approval percentage requirements
+* Quorum thresholds
+
 <Callout type="warning" emoji="⚠️">
-This page's documentation is currently in progress.
+Configuration changes are permanent and affect all future DAO operations. Ensure community consensus before proposing significant modifications.
+</Callout>
+
+<Callout type="error" emoji="🚨">
+**Security Note**: Always set conservative thresholds to prevent governance attacks. Higher minimum token requirements provide better security against malicious proposals.
 </Callout>
