@@ -71,99 +71,59 @@ Before modifying DAO configuration, ensure you have:
 * Understanding of the proposed changes and their impact
 * Community consensus or discussion around the modification
 
-### Proposing Configuration Changes
+### Config Modification
 
 <Steps>
 ### Step 1 - Access DAO Configuration
 
 Navigate to your DAO's **Params** section and review the current configuration settings.
 
-config_modify_step1
+![](../source/createadao/configchange1.png)
 
-### Step 2 - Create Configuration Proposal
+### Step 2 - Select Configuration Type
 
-Click on **"Create Proposal"** to start proposing configuration changes.
-
-config_modify_step2
-
-### Step 3 - Select Configuration Type
+Click on **"Change Config"** to start proposing configuration changes.
 
 Choose the type of configuration you want to modify:
 
-* **Community Vote Threshold**: Minimum tokens required for governance participation
-* **Council Configuration**: Changes to council structure and requirements
-* **Voting Parameters**: Quorum requirements, voting periods, and approval thresholds
-* **Treasury Settings**: Treasury management and spending limits
+**How would you like to configure your community token**: Liquid, Disabled, Membership
+* Liquid - Maybe be bought, sold, or transferred.
+* Disabled - This removes voting & managing power for token owners.
+* Membership - Cannot be traded or transferred, but can be revoked by the DAO.
 
-config_modify_step3
+**Do you want the community to be able to manage this DAO**: Anyone with the alloted amount of governance power can edit non security-related information without a proposal.
 
-### Step 4 - Configure New Parameters
+**What is the minimum amount of governance power needed to manage this DAO?**: A user will need at least this much governance power to manage and edit information for this DAO.
 
-Enter the new configuration values carefully. Each parameter change requires:
+**What type of governance structure do you want your DAO's community to use**: Default, VSR, NFT, Civic, QV, Custom
+* Default - Governance is based on token ownership
+* VSR - Locked tokens (veTokens)
+* NFT - Voting enabled and weighted based on NFTs owned
+* Civic - Governance based on Civic verification
+* QV - Quadratic voting
+* Custom - Add a custom program ID for governance structure
 
-* **Current Value**: Display of existing configuration
-* **New Value**: Your proposed changes
-* **Justification**: Explanation for the modification
+**How would you like to configure your council token**: Liquid, Disabled, Membership
+* Liquid - Maybe be bought, sold, or transferred.
+* Disabled - This removes voting & managing power for token owners.
+* Membership - Cannot be traded or transferred, but can be revoked by the DAO.
 
-config_modify_step4
+**What Type of community maximum voter weight do you want to use?**: This determines the maximum voter weight used to calculate voting thresholds. Updating this option requires you to know the maximum supply of your governance token.
+* Supply Fraction
+* Absolute
 
-### Step 5 - Review and Submit
+![](../source/createadao/configchange2.png)
+
+### Step 3 - Review and Submit
 
 Review your proposed changes thoroughly before submission. Include:
 
-* **Change Summary**: Brief description of modifications
-* **Impact Analysis**: How changes affect DAO operations
-* **Implementation Timeline**: When changes take effect
+* **Proposal Title**: Consider using the suggested proposal title
+* **Proposal Description**: This will help voters understand more details about your proposed changes
+* **Membership Voting**: Community or Council
 
-config_modify_step5
-
-### Step 6 - Community Voting
-
-After submission, the proposal enters the voting phase where:
-
-* DAO members vote on the proposed changes
-* Voting period follows DAO governance rules
-* Proposal requires majority approval to pass
-
-config_modify_step6
-
-### Step 7 - Execute Configuration Changes
-
-Once approved, execute the configuration changes:
-
-* Click **"Execute"** in the proposal's instruction section
-* Configuration updates apply immediately
-* All DAO members are notified of the changes
-
-config_modify_step7
+![](../source/createadao/configchange3.png)
 </Steps>
-
-### Common Configuration Modifications
-
-#### Adjusting Vote Thresholds
-
-Modify the minimum number of governance tokens required for:
-* Creating proposals
-* Participating in votes
-* Reaching quorum for decisions
-
-#### Council Management
-
-Update council-related settings such as:
-* Maximum number of council members
-* Council voting weights
-* Council election processes
-
-#### Voting Parameters
-
-Configure voting mechanics including:
-* Voting duration periods
-* Approval percentage requirements
-* Quorum thresholds
-
-<Callout type="warning" emoji="⚠️">
-Configuration changes are permanent and affect all future DAO operations. Ensure community consensus before proposing significant modifications.
-</Callout>
 
 <Callout type="error" emoji="🚨">
 **Security Note**: Always set conservative thresholds to prevent governance attacks. Higher minimum token requirements provide better security against malicious proposals.

@@ -4,7 +4,8 @@
     "title": "Getting Started"
   },
   "index": "Introduction",
-  "interface": "Interface",
+  "interface": "Legacy Interface",
+  "v2_interface": "v2 Interface",
   "glossary": "Glossary",
   "--": {
     "type": "separator",

@@ -32,7 +32,6 @@ Modify DAO operations and structure:
 * **Configuration Changes**: Update voting thresholds, quorum requirements
 * **Rule Modifications**: Change governance procedures and policies
 * **Member Management**: Add or remove council members
-* **Plugin Integration**: Add new governance plugins or features
 
 #### General Proposals
 
@@ -48,15 +47,20 @@ Community-driven initiatives:
 <Steps>
 ### Step 1 - Access Proposal Creation
 
-Navigate to the **"Proposals"** section and click **"Create Proposal"**.
+Navigate through the DAO page and click **"Create Proposal"**.
 
-proposal_step1
+![](../source/proposal/proposal.png)
 
 ### Step 2 - Choose Proposal Type
 
 Select the appropriate proposal type based on your intended action:
+* Community Vote - Community Token holders will be able to vote.
+* Council Vote - Vote is restricted only to Council token holders.
 
-proposal_step2
+* Executable - Executable proposals are proposals that contain on-chain instructions, which can be executed once the proposal reaches quorum and further more a finalized state.
+* Non-Executable - These proposals are mostly used for signal voting/ multi-choice sentiment within the DAO.
+
+![](../source/proposal/proposal1.png)
 
 ### Step 3 - Configure Proposal Details
 
@@ -65,51 +69,34 @@ Fill in the proposal information:
 * **Title**: Clear, descriptive proposal name
 * **Description**: Detailed explanation of the proposal
 * **Instructions**: Specific actions to be executed if approved
-* **Voting Parameters**: Duration, approval threshold, quorum requirements
 
-proposal_step3
+![](../source/proposal/proposal2.png)
 
-### Step 4 - Add Instructions (if applicable)
+### Step 4 - Add Instructions (Executable)
 
-For executable proposals, add specific instructions:
+For executable proposals, you can select instructions from the current list such as:
 
 * **Treasury Transfers**: Specify recipient addresses and amounts
 * **Configuration Changes**: Define new parameter values
-* **Smart Contract Calls**: Include contract addresses and function calls
+* **DeFi Actions**: Staking, swaps & lending
 
-proposal_step4
-
-### Step 5 - Review and Submit
-
-Carefully review all proposal details before submission:
-
-* **Verify Information**: Double-check all addresses, amounts, and parameters
-* **Preview Instructions**: Ensure instructions will execute as intended
-* **Consider Impact**: Assess potential consequences of the proposal
-
-proposal_step5
-
-### Step 6 - Deposit Required Tokens
-
-Some DAOs require a token deposit to create proposals:
-
-* **Anti-Spam Measure**: Prevents frivolous proposals
-* **Refundable Deposit**: Returned when proposal completes voting
-* **Threshold Amount**: Set by DAO configuration
-
-proposal_step6
+![](../source/proposal/proposal3.png)
 </Steps>
 
 ### Voting on Proposals
 
 #### Voting Process
 
+<Callout type="info" emoji="ℹ️">
+    This example will follow a council proposal.
+</Callout>
+
 <Steps>
 ### Step 1 - Review Active Proposals
 
 Browse active proposals in the governance interface.
 
-voting_step1
+![](../source/proposal/vote.png)
 
 ### Step 2 - Analyze Proposal Details
 
@@ -120,7 +107,7 @@ Thoroughly review:
 * **Discussion**: Read community comments and debates
 * **Voting Status**: Check current vote counts and time remaining
 
-voting_step2
+![](../source/proposal/vote1.png)
 
 ### Step 3 - Cast Your Vote
 
@@ -128,29 +115,19 @@ Choose your voting position:
 
 * **Yes**: Support the proposal
 * **No**: Oppose the proposal
-* **Abstain**: Participate without taking a position
 
-voting_step3
+![](../source/proposal/vote2.png)
 
 ### Step 4 - Confirm Vote Transaction
 
-Submit your vote through a blockchain transaction:
+Submit your vote through a transaction:
 
 * **Voting Weight**: Based on your token holdings or delegation
 * **Transaction Fee**: Pay required Solana network fees
-* **Irreversible**: Votes cannot be changed once submitted
+* **Reversible**: Votes can be changed or withdrawn once submitted
 
-voting_step4
+![](../source/proposal/vote3.png)
 </Steps>
-
-#### Voting Considerations
-
-Before voting, consider:
-
-* **Proposal Merit**: Does the proposal benefit the DAO?
-* **Resource Impact**: How will it affect treasury and operations?
-* **Community Consensus**: What is the general community sentiment?
-* **Long-term Effects**: What are the lasting implications?
 
 ### Proposal Lifecycle
 
@@ -168,47 +145,8 @@ Before voting, consider:
 
 #### Execution Phase
 
-* **Approval Check**: Verify proposal meets approval criteria
 * **Instruction Execution**: Automatic execution of approved instructions
 * **Completion**: Proposal is finalized and effects are implemented
-
-#### Resolution Phase
-
-* **Success**: Proposal was approved and executed successfully
-* **Failure**: Proposal was rejected or failed to meet requirements
-* **Cancellation**: Proposal was withdrawn or cancelled
-
-### Proposal Management
-
-#### For Proposal Creators
-
-* **Clear Communication**: Write detailed, understandable proposals
-* **Community Engagement**: Actively discuss and defend your proposal
-* **Respond to Feedback**: Address community concerns and questions
-* **Follow Up**: Monitor execution and report on outcomes
-
-#### For Voters
-
-* **Stay Informed**: Research proposals thoroughly before voting
-* **Participate Actively**: Engage in discussions and debates
-* **Vote Consistently**: Maintain regular participation in governance
-* **Consider Delegation**: Delegate to trusted community members when needed
-
-### Best Practices
-
-#### Writing Effective Proposals
-
-* **Clear Objectives**: State specific, measurable goals
-* **Detailed Rationale**: Explain why the proposal is necessary
-* **Implementation Plan**: Outline how the proposal will be executed
-* **Risk Assessment**: Identify potential challenges and mitigation strategies
-
-#### Voting Responsibly
-
-* **Research Thoroughly**: Understand all aspects of the proposal
-* **Consider Multiple Perspectives**: Listen to different viewpoints
-* **Think Long-term**: Consider lasting impact on the DAO
-* **Participate Actively**: Engage in discussions and vote regularly
 
 <Callout type="info" emoji="ℹ️">
 Proposals are the primary mechanism for DAO evolution and decision-making. Active participation in the proposal process is essential for effective governance.
